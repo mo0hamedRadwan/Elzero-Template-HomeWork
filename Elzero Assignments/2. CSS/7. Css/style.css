@@ -1,0 +1,58 @@
+/* https://elzero.org/css-assignments-lesson-from-27-to-29/ */
+
+.container{
+    background-color: #eee;
+    width: 800px;
+    margin: 20px auto;
+    height: 270px;
+}
+
+.container div:not(.clear){
+    background-color: #ddd;
+    margin: 15px 0 0 15px;
+    padding: 15px 0;
+    float: left;
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}
+
+.full_width{
+    width: calc(100% - 30px);
+}
+
+.One_third{
+    width: calc((100% - 4*15px)/3);
+}
+
+.One_half{
+    width: calc((100% - 3*15px)/2);
+}
+
+.One_quarter{
+    width: calc((100% - 5*15px)/4);
+}
+
+div.normal , div.one , div.two{
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(170, 170, 170);
+    color: black;
+}
+
+div.normal{
+    opacity: 1;
+}
+
+div.one{
+    background-color: rgba(170, 170, 170, 0.1);
+}
+
+div.two{
+    opacity: 0.1;
+}

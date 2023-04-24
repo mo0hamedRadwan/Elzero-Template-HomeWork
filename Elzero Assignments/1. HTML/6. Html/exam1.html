@@ -1,0 +1,31 @@
+<!-- https://elzero.org/html-assignments-lesson-from-24-to-27/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="test.py" method="post">
+            <label for="username">User Name</label><br>
+            <input type="text" id ="username" name="username" placeholder="Enter User Name" required />
+            <hr>
+            <label for="password">Password</label><br>
+            <input type="password" id ="password" name="password" placeholder="Enter Password" />
+            <hr>
+            <label for="mobile">Mobile</label><br>
+            <input type="tel" id ="mobile" name="mobile" placeholder="Enter Mobile" />
+            <hr>
+            <label for="email">Email</label><br>
+            <input type="email" id ="email" name="email" placeholder="Enter Email" required/>
+            <hr>
+            <label for="subject">Subject</label><br>
+            <input type="text" id ="subject" name="subject" placeholder="Enter Subject" />
+            <input type="hidden" name="hidden Value" value="5">
+            <hr>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send Data">
+        </form>
+    </body>
+</html>

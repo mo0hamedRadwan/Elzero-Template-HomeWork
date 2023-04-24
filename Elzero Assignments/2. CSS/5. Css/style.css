@@ -1,0 +1,48 @@
+h1{
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #eee;
+    text-shadow:0.5px 0.5px red,
+                1px 1px blue,
+                1.5px 1.5px green;
+}
+
+.one{
+    text-transform: uppercase;
+}
+
+.two{
+    text-transform: capitalize;
+}
+
+.three{
+    text-transform: lowercase;
+}
+
+div{
+    background-color: #eee;
+    color: black;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 1.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a{
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(19, 122, 117);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 5px solid rgb(6, 65, 57);
+}

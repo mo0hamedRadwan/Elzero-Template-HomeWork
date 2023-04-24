@@ -1,0 +1,59 @@
+/* https://elzero.org/css-assignments-lesson-from-1-to-4/ */
+
+
+/* Any Element With Class Title */
+.title {}
+
+/* Element With ID nav */
+#nav {}
+
+/* Any Div Elements */
+div {}
+
+/* Any h2 Elements */
+h2 {}
+
+/* ********************** */
+
+/* Valid */
+._user-name {}
+
+/* Valid */
+.-user-name {}
+
+/* Valid */
+.-user-name {}
+
+/* Not Valid */
+.1user-name {}
+
+/* Not Valid */
+.@user-name {}
+
+/* Not Valid */
+.user@name {}
+
+/* Valid */
+._user10name {}
+
+/* Valid */
+.u {}
+
+
+/* ********************** */
+
+
+/* Bad => UPPERCASE (Not Readable) */
+.USERNAME {}
+
+/* Good => PascalCase */
+.UserName {}
+
+/* Good => kebab-case*/
+.user-name {}
+
+/* Good => camelCase*/
+.userName {}
+
+/* Bad => lowercase (long class name and Not Readable) */
+.usernameprofile {}

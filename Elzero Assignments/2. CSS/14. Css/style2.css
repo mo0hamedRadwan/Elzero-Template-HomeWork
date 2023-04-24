@@ -1,0 +1,60 @@
+/* https://elzero.org/css-assignments-lesson-from-57-to-64 */
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.layout{
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-areas:"head head head head head"
+                        "cont cont cont cont aside"
+                        "foot foot foot foot foot";
+}
+
+.layout *{
+    color: white;
+    padding: 20px;
+}
+
+.layout header{
+    grid-area: head;
+    background-color: #03A9F4;
+}
+
+.layout header::before{
+    content: "Header";
+}
+
+.layout section{
+    grid-area: cont;
+    background-color: #FF5722;
+}
+
+.layout section::before{
+    content: "Section";
+}
+
+.layout aside{
+    grid-area: aside;
+    background-color: #607D8B;
+}
+
+.layout aside::before{
+    content: "Sidebar";
+}
+
+.layout footer{
+    grid-area: foot;
+    background-color: #009688;
+}
+
+.layout footer::before{
+    content: "Footer";
+}

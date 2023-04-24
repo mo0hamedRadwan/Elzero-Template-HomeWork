@@ -1,0 +1,110 @@
+/* https://elzero.org/css-assignments-lesson-from-34-to-37 */
+
+:root{
+    --variable: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent div{
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 4;
+    margin: 10px auto;
+}
+
+.parent div:empty{
+    background-color: red;
+}
+
+.parent div:first-child,
+.parent div:last-child{
+    background-color: #eee;
+}
+
+.hello{
+    width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #DDD;
+    position: relative;
+    font-size: 20px;
+}
+
+.hello::first-letter{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    float: left;
+    margin-top: -15px;
+    margin-left: -40px;
+}
+
+.parent ~ p{
+    background-color: #eee;
+    width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    border-left: 5px solid #e91e63;
+    font-weight: bold;
+    position: relative;
+}
+
+.parent ~ p::before{
+    content: "";
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #e91e63 transparent transparent;
+    position: absolute;
+    top: 15px;
+    left: -35px;
+}
+
+.parent ~p::after{
+    content: attr(data-person);
+    background-color: #DDD;
+    font-weight: bold;
+    padding: 10px;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: -120px;
+}
+
+.text p{
+    background-color: #eee;
+    width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    font-weight: bold;
+    position: relative;
+    counter-increment: variable;
+}
+
+.text p::before{
+    content: counter(variable);
+    background-color: #f44336;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+}
+
+.text p::after{
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #f44336;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

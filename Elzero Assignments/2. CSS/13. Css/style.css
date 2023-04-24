@@ -1,0 +1,80 @@
+/* https://elzero.org/css-assignments-lesson-from-54-to-56 */
+
+.parent1{
+    display: flex;
+    justify-content: center;
+}
+
+.parent1 div{
+    width: 600px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+    background-color: #eee;
+    border-left: 5px solid #F44336;
+    border-right: 5px solid #673AB7;
+    position: relative;
+}
+
+.parent1 div::first-letter{
+    color: #F44336;
+}
+
+.parent1 div::before{
+    content: "";
+    width: calc(100% + 10px);
+    height: 5px;
+    background-image: linear-gradient(to right , #F44336 20% , #2196F3 20% , #2196F3 40%, #4CAF50 40%, #4CAF50 60% ,#E91E63 60%, #E91E63 80%, #673AB7 80%) ;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+.parent1 div::after{
+    content: "";
+    width: calc(100% + 10px);
+    height: 5px;
+    background-image: linear-gradient(to right , #F44336 20% , #2196F3 20% , #2196F3 40%, #4CAF50 40%, #4CAF50 60% ,#E91E63 60%, #E91E63 80%, #673AB7 80%) ;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+}
+
+.parent2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent2 div{
+    width: 600px;
+    margin: 20px;
+    position: relative;
+}
+
+.parent2 div input[type="text"]{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    caret-color: red;
+    background-color: #eee;
+}
+
+.parent2 input[type="text"]::placeholder{
+    color: #BBB;
+}
+
+.parent2 div::before{
+    content: "";
+    width: calc(100% + 40px);
+    height: 5px;
+    background-image: linear-gradient(to right , #F44336 50% , #F44336 50% , #009688 50%) ;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}

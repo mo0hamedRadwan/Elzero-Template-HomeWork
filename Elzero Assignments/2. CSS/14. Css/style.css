@@ -1,0 +1,51 @@
+/* https://elzero.org/css-assignments-lesson-from-57-to-64 */
+
+*{
+    box-sizing: border-box;
+}
+
+.grid1{
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px , 1fr));
+    grid-template-rows: 50px 1fr;
+    gap: 15px;
+}
+
+.grid1 div{
+    background-color: #607D8B;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid1 div:nth-child(1)::before{
+    content: "Element 1";
+}
+
+.grid1 div:nth-child(2)::before{
+    content: "Element 2";
+}
+
+.grid1 div:nth-child(3)::before{
+    content: "Element 3";
+}
+
+.grid1 div:nth-child(4)::before{
+    content: "Element 4";
+}
+
+.grid1 div:nth-child(5)::before{
+    content: "Element 5";
+}
+
+.grid1 div:nth-child(6)::before{
+    content: "Element 6";
+}

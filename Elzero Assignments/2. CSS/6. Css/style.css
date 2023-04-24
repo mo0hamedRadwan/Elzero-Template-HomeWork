@@ -1,0 +1,50 @@
+/* https://elzero.org/css-assignments-lesson-from-22-to-26/ */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+:root{
+    font-size: 20px;
+}
+
+.one{
+    border: 5px solid orangered;
+    padding: 20px;
+}
+
+.one p{
+    background-color: #ddd;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: inherit;
+    border: inherit;
+}
+
+.two, .three, .four{
+    background-color: #ccc;
+    width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.two{
+    font-family: "Open sans" , Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.three{
+    font-family: "Cairo" , 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.four{
+    font-family: "Jomhuria";
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+

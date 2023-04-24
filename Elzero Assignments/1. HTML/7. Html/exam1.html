@@ -1,0 +1,71 @@
+<!-- https://elzero.org/html-assignments-lesson-from-28-to-30/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Form</legend>
+                <input type="hidden" name="token" value="b92f1fc2fce391ad7af633723afd3055">
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" value="o@o.com" readonly>
+                </div>
+                <br>
+                <div>
+                    <label for="username">User Name</label><br>
+                    <input type="text" name="username" id="username" minlength="5" maxlength="20" required autofocus>
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="checkbox" name="skills" id="problemSolving">
+                <label for="problemSolving">Problem Solving</label><br>
+                <input type="checkbox" name="skills" id="logicalThinking">
+                <label for="logicalThinking">Logical Thinking</label><br>
+                <input type="checkbox" name="skills" id="advancedSearch">
+                <label for="advancedSearch">Advanced Search</label><br>
+                <input type="checkbox" name="skills" id="Analysis">
+                <label for="Analysis">Analysis</label><br>
+                <input type="checkbox" name="skills" id="Planning">
+                <label for="Planning">Planning</label><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Jobs</legend>
+                <input type="radio" name="jobs" id="FrontEndDeveloper">
+                <label for="FrontEndDeveloper">Front-End Developer</label><br>
+                <input type="radio" name="jobs" id="BackEndDeveloper">
+                <label for="BackEndDeveloper">Back-End Developer</label><br>
+                <input type="radio" name="jobs" id="BusinessAnalyst">
+                <label for="BusinessAnalyst">Business Analyst</label><br>
+                <input type="radio" name="jobs" id="ProjectManager">
+                <label for="ProjectManager">Project Manager</label><br>
+                <input type="radio" name="jobs" id="ScrumMaster">
+                <label for="ScrumMaster">Scrum Master</label><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Programming</legend>
+                <label for="select">Choose Book: </label>
+                <select name="select" id="select">
+                    <optgroup label="PHP">
+                        <option value="5">v5.0</option>
+                        <option value="7">v7.0</option>
+                        <option value="8">v8.0</option>
+                    </optgroup>
+                    <optgroup label="Python">
+                        <option value="2.0">v2.0</option>
+                        <option value="3.0">v3.0</option>
+                        <option value="3.9">v3.9</option>
+                    </optgroup>
+                </select><br><hr>
+                <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Write Here ..."></textarea>
+            </fieldset><br>
+            <input type="reset" value="Empty">
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>
