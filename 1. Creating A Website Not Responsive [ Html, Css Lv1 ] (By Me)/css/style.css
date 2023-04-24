@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    /* height: 6000px; */
+}
+
+.clear{clear: both;}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header{ 
+    background-image: url("../img/background5.jpg");
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.header h1{
+    color :white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+}
+
+.header #firstName{
+    left: 10%;
+}
+
+.header #lastName{
+    right: 20%;
+}
+
+.navbar{
+    background-color: rgb(37, 47, 49);
+}
+
+.logo h2{
+    display: inline;
+    float: left;
+    margin: 10px;
+    color: rgb(22, 138, 47);
+    text-transform: uppercase;
+}
+
+.logo h2 span{
+    padding: 5px;
+    background-color: rgb(70, 90, 90);
+    color : white;
+}
+
+ul#navbarlist{
+    float: right;
+    text-transform: uppercase;
+}
+
+ul#navbarlist li{
+    display: inline-block;
+    margin: 15px;
+    
+}
+
+ul#navbarlist li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul#navbarlist li a:hover{
+    color :rgb(22, 138, 47);
+}
+
+/* ************************************************************************ */
+
+.feature{
+    width: 30%;
+    float: left;
+    padding: 20px;
+    height: 350px;
+}
+
+.feature h2{
+    margin: 30px 0;
+}
+
+.feature p{
+    color: gray;
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.right img{
+    width: 400px;
+    height: 650px;
+    float: left;
+}
+
+.aboutme .left{
+    background-color: #EEE;
+    max-width: 68%;
+    height: 650px;
+    float: left;
+    padding: 70px 0 0 70px;
+}
+
+.aboutme .left p{
+    padding: 10px 0;
+    color: gray;
+    line-height: 1.5;
+}
+
+.hobby{
+    width: 45%;
+    float: left;
+    margin: 30px 0 0 30px;
+}
+
+/* ***************************************************************** */
+
+.skills .container .left , .skills .container .right{
+    width: 45%;
+    float: left;
+    padding : 50px;
+    /* background-color: aqua; */
+}
+
+.skills .container .left p{
+    margin-top: 30px;
+    line-height: 1.5;
+    color :rgb(37, 47, 49)
+}
+
+.Btn{
+    margin-top: 50px;
+    width: 180px;
+    text-align: center;
+    border: 2px solid rgb(22, 138, 47);
+    border-radius: 5px;
+}
+
+.Btn a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.Btn a:hover{
+    background-color: rgb(22, 138, 47);
+    color : white;
+}
+
+.skills .container .right h3{
+    margin: 30px 0 10px 30px;
+}
+
+.skills .container .right .skill{
+    margin-left: 30px;
+    background-color: #CCC;
+    height: 25px;
+    width: 100%;
+}
+
+#photoshopSkills , #IllustrutorSkills , #frontendSkills , #backendSkills{
+    padding-top: 4px;
+    height: 100%;
+    direction: rtl;
+    background-color: rgb(22, 138, 47);
+    color : white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#photoshopSkills{width: 90%;}
+#IllustrutorSkills{width: 80%;}
+#frontendSkills{width: 90%;}
+#backendSkills{width: 70%;}
+
+.resume{
+    background-color: #EEE;
+    text-align: center;
+    line-height: 2;
+    height: 400px;
+}
+.resume h2{
+    padding: 50px;
+}
+
+.resume .Btn{
+    margin: 50px auto;
+}
+
+/**********************************************************/
+
+.edu .container h2,
+.work .container h2{
+    margin-top: 50px;
+}
+
+.edu .container .left , .edu .container .right,
+.work .container .left , .work .container .right{
+    width: 45%;
+    float : left;
+    margin-top: 20px;
+    line-height: 1.5;
+    color:rgb(70, 90, 90);
+}
+
+.edu .container .right,
+.work .container .right{
+    margin-left: 40px;
+}
+
+.edu .container p , .edu .container hr,
+.work .container p , .work .container hr{
+    margin: 15px 0 15px 0;
+}
+.edu .container h3,
+.work .container h3{
+    color: black;
+    margin-top: 15px;
+}
+
+.edu .container span,    
+.work .container span{
+    display: block;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(22, 138, 47);
+    color: white;
+    padding: 4px 0 0 8px;
+}
+
+.quote{
+    background-color: #EEE;
+    padding: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.quote h3{
+    margin-top: 40px;
+}
+/*******************************************************/
+
+.portfolio{
+    padding: 50px;
+    text-align: center;
+    line-height: 1.5;
+    height: 950px;
+}
+
+.portfolio p{
+    margin: 40px 0;;
+}
+
+.portfolio img{
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.contact{
+    background-color: rgb(37, 47, 49);
+    color: white;
+}
+
+.contact .container .left,
+.contact .container .right{
+    width: 45%;
+    height: 500px;
+    float : left; 
+    padding: 40px;
+}
+
+.contact span{
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.contact input , .contact label , .contact textarea{
+    display: block;
+    margin: 10px;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
+.contact input{
+    height: 40px;
+}
+
+.contact textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+.contact p{
+    margin: 40px 0 40px 0;
+    line-height: 1.5;
+}
+
+.foot{
+    background-color: rgb(30, 35, 39);
+    color : #AAA;
+    text-align: center;
+    padding: 50px;
+}
